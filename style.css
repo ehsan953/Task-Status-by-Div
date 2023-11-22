@@ -2,55 +2,56 @@ body {
   background-color: grey;
   font-family: sans-serif;
 }
-.container {
+.hero-section {
   display: flex;
   justify-content: center;
 }
-.main-div {
-  width: 80%;
+.hero-container {
+  width: 95%;
   height: 31rem;
+  padding-left: 20px;
   background-color: white;
 }
-.row1 {
+.hero-header {
   margin-top: 20px;
   padding: 1.25rem 0;
   width: 100%;
   display: flex;
-  border-bottom: 3px dashed rgb(247, 239, 239);
+  border-bottom: 0.19rem dashed rgb(247, 239, 239);
 }
-span {
+.hero-rows {
+  padding: 1.25rem 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.19rem dashed rgb(247, 239, 239);
+}
+.header-item {
   margin: auto;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
-.circle {
+.loading-circle {
   height: 3.125rem;
   width: 3.125rem;
   background-color: rgb(220, 217, 217);
   border-radius: 50%;
   position: absolute;
 }
-.circle1 {
+.loading-circle1 {
   top: -1rem;
   left: -2.5rem;
 }
-.circle2 {
+.loading-circle2 {
   top: -1rem;
   left: 44%;
   position: absolute;
   z-index: 2;
 }
-.circle3 {
+.loading-circle3 {
   top: -1rem;
   left: 98%;
-}
-.row {
-  padding: 1.25rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 0.19rem dashed rgb(247, 239, 239);
 }
 
 .loading-background {
@@ -155,14 +156,17 @@ span {
   margin-right: 5px;
   padding: 2px;
 }
-.running-icon {
+.running-icon-styled {
   color: rgb(239, 235, 235);
   font-size: 18px;
   position: absolute;
   top: 8px;
   left: 8px;
 }
-
+.running-icon {
+  color: blue;
+  font-size: 20px;
+}
 .failed-icon,
 .exclamation-icon {
   color: red;
