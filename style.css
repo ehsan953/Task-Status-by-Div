@@ -8,12 +8,12 @@ body {
 }
 .main-div {
   width: 80%;
-  height: 500px;
+  height: 31rem;
   background-color: white;
 }
 .row1 {
   margin-top: 20px;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   width: 100%;
   display: flex;
   border-bottom: 3px dashed rgb(247, 239, 239);
@@ -21,93 +21,88 @@ body {
 span {
   margin: auto;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
-.three-circles {
-}
+
 .circle {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   background-color: rgb(220, 217, 217);
   border-radius: 50%;
   position: absolute;
 }
 .circle1 {
-  top: -16px;
-  left: -40px;
+  top: -1rem;
+  left: -2.5rem;
 }
 .circle2 {
-  top: -16px;
+  top: -1rem;
   left: 44%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 .circle3 {
-  top: -16px;
+  top: -1rem;
   left: 98%;
 }
 .row {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
+  padding: 1.25rem 0;
   display: flex;
   justify-content: space-around;
-  border-bottom: 3px dashed rgb(247, 239, 239);
+  align-items: center;
+  border-bottom: 0.19rem dashed rgb(247, 239, 239);
 }
 
 .loading-background {
   width: 50%;
-  height: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 1rem;
   background-color: rgb(220, 217, 217);
   position: relative;
+  display: flex;
+  align-items: center;
 }
+
 .green-loading {
   width: 100%;
-  height: 4px;
+  height: 0.25rem;
   background-color: rgb(7, 149, 7);
-  margin: 5px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   transition: all 3s;
-  /* animation: success 5s linear; */
+  animation: success 5s linear;
 }
+
 @keyframes success {
   0% {
-    left: 0;
     transform: scaleX(0);
   }
   100% {
-    left: 50%;
     transform: scaleX(1);
   }
 }
-.orange-loading {
-  width: 100%;
-  height: 4px;
-  background-color: rgba(235, 172, 14, 0.895);
-  margin: 5px 0;
+
+.success-icon {
+  color: rgb(7, 149, 7);
+  font-size: 2.1875rem;
   position: absolute;
-  z-index: 1;
+  top: 0.4375rem;
+  left: 0.4375rem;
 }
+
 .blue-loading {
   width: 40%;
-  height: 4px;
+  height: 0.25rem;
   background-color: blue;
-  margin: 5px 0;
   position: absolute;
-  z-index: 1;
-  transition: all 3s;
+  z-index: 2;
 }
+
 .red-loading {
   width: 48%;
-  height: 4px;
+  height: 0.25rem;
   background-color: red;
-  margin: 5px 0;
   position: absolute;
-  z-index: 1;
-  transition: all 3s;
+  z-index: 2;
 }
 .pending-flex {
   color: rgba(235, 172, 14, 0.895);
@@ -167,13 +162,7 @@ span {
   top: 8px;
   left: 8px;
 }
-.success-icon {
-  color: rgb(7, 149, 7);
-  font-size: 35px;
-  position: absolute;
-  top: 7px;
-  left: 7px;
-}
+
 .failed-icon,
 .exclamation-icon {
   color: red;
